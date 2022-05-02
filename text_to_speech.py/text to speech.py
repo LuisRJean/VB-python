@@ -96,7 +96,7 @@ Label(root,text="SPEED",font="arial 15 bold",bg="#305065",fg="white").place(x=76
 
 gender_combobox=Combobox(root,values=['Male','Female'],font="arial 15",state='r',width=10)
 gender_combobox.place(x=550,y=200)
-gender_combobox.set('Male')
+gender_combobox.set('Female')
 
 
 speed_combobox=Combobox(root,values=['Fast','Normal', 'Slow'],font="arial 15",state='r',width=10)
