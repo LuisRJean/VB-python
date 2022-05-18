@@ -72,7 +72,7 @@ def download():
             engine.setProperty('rate', 60)
             setvoice()
 #icon
-image_icon=PhotoImage(file="C:/Users/Luis/Desktop/text_to_speech.py/speak.png.png")
+image_icon=PhotoImage(file="speak.png")
 root.iconphoto(False,image_icon)
 
 
@@ -80,7 +80,7 @@ root.iconphoto(False,image_icon)
 Top_Frame=Frame(root,bg="white",width=900,height=100)
 Top_Frame.place(x=0,y=0)
 
-Logo=PhotoImage(file="C:/Users/Luis/Desktop/text_to_speech.py/speaker logo.png.png")
+Logo=PhotoImage(file="speaker logo.png")
 Label(Top_Frame,image=Logo,bg="white").place(x=10,y=5)
 
 Label(Top_Frame,text="TEXT TO SPEECH",font="arial 20 bold",bg="white",fg="black").place(x=100,y=30)
@@ -94,7 +94,7 @@ text_area.place(x=10,y=150,width=500,height=250)
 Label(root,text="VOICE",font="arial 15 bold",bg="#305065",fg="white").place(x=580,y=160)
 Label(root,text="SPEED",font="arial 15 bold",bg="#305065",fg="white").place(x=760,y=160)
 
-gender_combobox=Combobox(root,values=['Male','Female'],font="arial 15",state='r',width=10)
+gender_combobox=Combobox(root,values=['Female','Male'],font="arial 15",state='r',width=10)
 gender_combobox.place(x=550,y=200)
 gender_combobox.set('Male')
 
@@ -103,11 +103,11 @@ speed_combobox=Combobox(root,values=['Fast','Normal', 'Slow'],font="arial 15",st
 speed_combobox.place(x=730,y=200)
 speed_combobox.set('Normal')                                     
 
-imageicon=PhotoImage(file="C:/Users/Luis/Desktop/text_to_speech.py/speak.png.png")
+imageicon=PhotoImage(file="speak.png")
 btn=Button(root,text="Speak",compound=LEFT,image=imageicon,width=130,font="arial 14 bold",command=speaknow)
 btn.place(x=550,y=280)
 
-imageicon2=PhotoImage(file="C:/Users/Luis/Desktop/text_to_speech.py/download.png.png")
+imageicon2=PhotoImage(file="download.png")
 save=Button(root,text="Save",compound=LEFT,image=imageicon2,width=130,bg="#39c790",font="arial 14 bold",command=download)
 save.place(x=730,y=280)
 
